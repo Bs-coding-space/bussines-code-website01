@@ -620,7 +620,7 @@ export default function Home() {
                 <Image src="/logo.png" alt="Business Code Logo" width={200} height={60} className="h-12 w-auto" />
               </div>
               <p className="text-gray-400 mb-4">
-                Desarrollamos sitios web profesionales para academias que buscan crecer y modernizarse.
+                Desarrollamos sitios web profesionales para negocios que buscan crecer y modernizarse.
               </p>
             </div>
 
@@ -643,7 +643,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  info@businesscode.com
+                 info.businesscode@zohomail.com
                 </li>
                 <li className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
