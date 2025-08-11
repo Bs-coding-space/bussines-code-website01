@@ -205,7 +205,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-green-600 text-white">Básico</Badge>
                 <CardTitle className="text-2xl text-white">Plan Básico</CardTitle>
-                <div className="text-3xl font-bold text-cyan-400">Desde S/ 480 a s/ 650 </div>
+                <div className="text-3xl font-bold text-cyan-400">Desde S/480 a s/650 </div>
                 <CardDescription className="text-gray-400">Perfecto para empezar</CardDescription>
               </CardHeader>
               <CardContent>
@@ -237,7 +237,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-cyan-600 text-black">Intermedio</Badge>
                 <CardTitle className="text-2xl text-white">Plan Intermedio</CardTitle>
-                <div className="text-3xl font-bold text-cyan-400">S/ 800 a S/ 1,200</div>
+                <div className="text-3xl font-bold text-cyan-400">S/800 a S/1,200</div>
                 <CardDescription className="text-gray-400">Ideal para academias o empresas establecidas</CardDescription>
               </CardHeader>
               <CardContent>
@@ -266,7 +266,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-purple-600 text-white">Completo</Badge>
                 <CardTitle className="text-2xl text-white">Plan Completo</CardTitle>
-                <div className="text-3xl font-bold text-purple-400">S/ 1,500 a S/ 2900</div>
+                <div className="text-3xl font-bold text-purple-400">S/1,500 a S/2900</div>
                 <CardDescription className="text-gray-400">Solución integral</CardDescription>
               </CardHeader>
               <CardContent>
