@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
-import { Monitor, Users, MapPin, MessageCircle, BookOpen, Code, Server, Mail, Clock, CheckCircle, ArrowRight, Phone, Instagram, Facebook, Linkedin, Menu, X, ChefHat, Plane, ShoppingBag } from 'lucide-react'
+import { Monitor, Users, MapPin, MessageCircle, BookOpen, Code, Server, Mail, Clock, CheckCircle, ArrowRight, Phone, Instagram, Facebook, Linkedin, Menu, X, ChefHat, Plane, ShoppingBag, GraduationCap, Award, Target, Lightbulb } from 'lucide-react'
 import Image from "next/image"
 import { useState } from "react"
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+  const [isTemarioOpen, setIsTemarioOpen] = useState(false)
   return (
     <div className="min-h-screen bg-black">
       {/* Header */}
@@ -205,7 +205,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-green-600 text-white">Básico</Badge>
                 <CardTitle className="text-2xl text-white">Plan Básico</CardTitle>
-                <div className="text-3xl font-bold text-cyan-400">Desde S/480 a s/650 </div>
+                <div className="text-3xl font-bold text-cyan-400">Desde S/ 620</div>
                 <CardDescription className="text-gray-400">Perfecto para empezar</CardDescription>
               </CardHeader>
               <CardContent>
@@ -237,7 +237,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-cyan-600 text-black">Intermedio</Badge>
                 <CardTitle className="text-2xl text-white">Plan Intermedio</CardTitle>
-                <div className="text-3xl font-bold text-cyan-400">S/800 a S/1,200</div>
+                <div className="text-3xl font-bold text-cyan-400">S/ 600 - 850</div>
                 <CardDescription className="text-gray-400">Ideal para academias o empresas establecidas</CardDescription>
               </CardHeader>
               <CardContent>
@@ -266,7 +266,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-purple-600 text-white">Completo</Badge>
                 <CardTitle className="text-2xl text-white">Plan Completo</CardTitle>
-                <div className="text-3xl font-bold text-purple-400">S/1,500 a S/2900</div>
+                <div className="text-3xl font-bold text-purple-400">S/ 970 - 2700</div>
                 <CardDescription className="text-gray-400">Solución integral</CardDescription>
               </CardHeader>
               <CardContent>
@@ -594,13 +594,12 @@ export default function Home() {
         </CardContent>
       </Card>
     </div>
-
     <div className="text-center mt-12">
       <Button
         className="cyan-gradient hover:opacity-90 text-black font-semibold px-8 py-3"
         onClick={() =>
           window.open(
-            "https://wa.me/51999999999?text=Hola, me gustaría ver más proyectos de su portafolio",
+            "https://wa.me/919467620?text=Hola, me gustaría ver más proyectos de su portafolio",
             "_blank",
           )
         }
@@ -608,6 +607,437 @@ export default function Home() {
         <MessageCircle className="w-5 h-5 mr-2" />
         Ver Más Proyectos
       </Button>
+    </div>
+  </div>
+</section>
+{/* Programa Educativo */}
+<section className="py-20 px-4 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 relative overflow-hidden">
+  <div className="absolute inset-0 bg-black/40"></div>
+  <div className="container mx-auto relative z-10">
+    <div className="text-center mb-16">
+      <div className="mb-8">
+        <div className="text-center mb-8">
+  <h1 className="text-4xl font-bold text-white mb-2">BUSINESS <span className="text-cyan-400">CODE-LEARNING</span></h1>
+  <p className="text-cyan-300 text-lg">&gt;TU VISIÓN EN CÓDIGO</p>
+</div>
+      </div>
+      <h3 className="text-4xl font-bold text-white mb-4">Programa Educativo</h3>
+      <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+        Capacitamos a usuarios estudiantes y empresarios en el mundo digital para que puedan gestionar 
+        y potenciar su presencia online de manera efectiva
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <Card className="bg-black/50 border-gray-700 hover:border-cyan-400 transition-all hover:shadow-xl backdrop-blur-sm">
+        <CardHeader className="text-center">
+          <div className="w-16 h-16 cyan-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+            <GraduationCap className="w-8 h-8 text-black" />
+          </div>
+          <CardTitle className="text-xl text-white">Introducción al Mundo Digital</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 text-gray-300">
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Alfabetización digital para estudiantes</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Seguridad básica en internet</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Buen uso de redes sociales</span>
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-black/50 border-gray-700 hover:border-purple-400 transition-all hover:shadow-xl backdrop-blur-sm">
+        <CardHeader className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Target className="w-8 h-8 text-white" />
+          </div>
+          <CardTitle className="text-xl text-white">Pensamiento Computacional</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 text-gray-300">
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Lógica de programación</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Lenguaje Python desde cero</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Resolución de problemas</span>
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-black/50 border-gray-700 hover:border-green-400 transition-all hover:shadow-xl backdrop-blur-sm">
+        <CardHeader className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Code className="w-8 h-8 text-white" />
+          </div>
+          <CardTitle className="text-xl text-white">Creación de Proyectos Digitales</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 text-gray-300">
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Crea tu primera página web</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Uso responsable de herramientas online</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Gestión de contenidos educativos</span>
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <Card className="bg-black/50 border-gray-700 hover:border-orange-400 transition-all hover:shadow-xl backdrop-blur-sm">
+        <CardHeader className="text-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Lightbulb className="w-8 h-8 text-white" />
+          </div>
+          <CardTitle className="text-xl text-white">Ciberseguridad para Jóvenes</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 text-gray-300">
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Cómo proteger tu información</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Detectar riesgos en internet</span>
+            </li>
+            <li className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-cyan-400 mr-2" />
+              <span className="text-sm">Talleres interactivos y simulaciones</span>
+            </li>
+          </ul>
+        </CardContent>
+      </Card>
+    </div>
+
+    <div className="text-center">
+      <div className="max-w-3xl mx-auto mb-8">
+        <h4 className="text-2xl font-bold text-white mb-4">¿Por qué aprender con Business Code - Learning?</h4>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center">
+            <div className="w-12 h-12 cyan-gradient rounded-lg flex items-center justify-center mx-auto mb-3">
+              <Award className="w-6 h-6 text-black" />
+            </div>
+            <h5 className="font-semibold text-white mb-2">Certificación Escolar interna </h5>
+            <p className="text-gray-400 text-sm">Certificado digital para estudiantes y colegios.</p>
+          </div>
+          <div className="text-center">
+            <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <Users className="w-6 h-6 text-white" />
+            </div>
+            <h5 className="font-semibold text-white mb-2">Acompañamiento Docente</h5>
+            <p className="text-gray-400 text-sm">Apoyo a profesor y escuela con materiales y seguimiento.</p>
+          </div>
+          <div className="text-center">
+            <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-3">
+              <Target className="w-6 h-6 text-white" />
+            </div>
+            <h5 className="font-semibold text-white mb-2">100% Práctico y Digital</h5>
+            <p className="text-gray-400 text-sm">Clases interactivas, talleres y proyectos reales.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button
+          size="lg"
+          className="cyan-gradient hover:opacity-90 text-black font-semibold px-8 py-3"
+          onClick={() =>
+            window.open(
+              "https://wa.me/919467620?text=Hola, me interesa conocer más sobre el Programa Educativo",
+              "_blank",
+            )
+          }
+        >
+          <MessageCircle className="w-5 h-5 mr-2" />
+          Más Información
+        </Button>
+       <Button
+  variant="outline"
+  size="lg"
+  className="px-8 py-3 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black bg-transparent"
+  onClick={() => setIsTemarioOpen(true)} // <-- Agregar esta línea
+>
+  <BookOpen className="w-5 h-5 mr-2" />
+  Ver Temario Completo
+</Button>
+      </div>
+    </div>
+  </div>
+</section>
+{/* Modal Temario */}
+{isTemarioOpen && (
+  <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+    <div className="bg-gray-900 rounded-lg max-w-6xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="p-6 border-b border-gray-700 flex justify-between items-center">
+        <h3 className="text-2xl font-bold text-white">Temario General – Programa Educativo Business Code</h3>
+        <button onClick={() => setIsTemarioOpen(false)} className="text-gray-400 hover:text-white">
+          <X className="w-6 h-6" />
+        </button>
+      </div>
+
+      <div className="p-6 space-y-8">
+        {/* Etapa 1 */}
+        <div className="border-l-4 border-cyan-400 pl-6">
+          <h4 className="text-xl font-semibold text-cyan-400 mb-2">Etapa 1 – Charla Gratuita</h4>
+          <p className="text-white font-medium mb-2">
+            Introducción a la programación y la ciberseguridad en la vida diaria
+          </p>
+          <p className="text-gray-400 mb-4">Duración: 1.5 – 2 horas</p>
+          <div className="space-y-2 text-gray-300">
+            <p>• ¿Qué es la programación y por qué todos deberían entenderla?</p>
+            <p>• Ciberseguridad en el día a día: fraudes, hackeos y estafas reales</p>
+            <p>• Cómo protegerte en redes sociales, banca y navegación diaria</p>
+            <p>• Presentación de la ruta educativa: cómo avanzar desde cero</p>
+            <p>• Espacio interactivo de preguntas y testimonios</p>
+          </div>
+        </div>
+
+        {/* Etapa 2 */}
+        <div className="border-l-4 border-purple-400 pl-6">
+          <h4 className="text-xl font-semibold text-purple-400 mb-2">Etapa 2 – Taller Inicial</h4>
+          <p className="text-white font-medium mb-2">
+            Lógica de programación + primeros pasos en seguridad digital
+          </p>
+          <p className="text-gray-400 mb-4">Duración: 2 – 3 horas</p>
+          <div className="space-y-2 text-gray-300">
+            <p>• Pensamiento lógico y resolución de problemas</p>
+            <p>• Introducción a la programación: pseudocódigo, condicionales y variables</p>
+            <p>• Primeros comandos en Python</p>
+            <p>• ¿Qué es una contraseña segura? Buenas prácticas</p>
+            <p>• Seguridad digital en el uso diario: correos, redes y dispositivos</p>
+            <p>• Herramientas gratuitas recomendadas para protección digital</p>
+          </div>
+        </div>
+
+        {/* Etapa 3 */}
+        <div className="border-l-4 border-green-400 pl-6">
+          <h4 className="text-xl font-semibold text-green-400 mb-2">Etapa 3 – Curso Básico</h4>
+          <p className="text-white font-medium mb-2">Programación con Python + Fundamentos de Ciberseguridad</p>
+          <p className="text-gray-400 mb-4">Duración: 4 semanas (2 clases por semana, 2 horas c/u)</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h5 className="font-semibold text-white mb-3">Programación (Python):</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Sintaxis básica, variables y tipos de datos</p>
+                <p>• Estructuras de control: if, for, while</p>
+                <p>• Funciones y manejo de errores</p>
+                <p>• Entrada/salida de datos y archivos</p>
+                <p>• Proyectos prácticos: calculadora, generador de contraseñas, gestor de tareas</p>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-semibold text-white mb-3">Ciberseguridad:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Principios CIA: Confidencialidad, Integridad y Disponibilidad</p>
+                <p>• Tipos de amenazas: malware, phishing, ransomware</p>
+                <p>• Antivirus y firewalls: uso correcto</p>
+                <p>• Seguridad en contraseñas y verificación en dos pasos</p>
+                <p>• Herramientas básicas: gestores de contraseñas, navegadores seguros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Etapa 4 */}
+        <div className="border-l-4 border-orange-400 pl-6">
+          <h4 className="text-xl font-semibold text-orange-400 mb-2">Etapa 4 – Curso Avanzado</h4>
+          <p className="text-white font-medium mb-2">
+            Automatización con Python + Hacking Ético básico + Proyectos
+          </p>
+          <p className="text-gray-400 mb-4">Duración: 8 semanas (2 clases por semana, 2–3 horas c/u)</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h5 className="font-semibold text-white mb-3">Automatización:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Web scraping con BeautifulSoup o Selenium</p>
+                <p>• Automatización de tareas repetitivas (correo, archivos, etc.)</p>
+                <p>• Uso de APIs y creación de scripts</p>
+              </div>
+              <h5 className="font-semibold text-white mb-3 mt-4">Proyectos Finales:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Script útil de automatización</p>
+                <p>• Análisis de vulnerabilidades en entorno simulado</p>
+                <p>• Presentación de informe técnico</p>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-semibold text-white mb-3">Ciberseguridad Avanzada:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Pentesting básico: reconocimiento, escaneo, explotación</p>
+                <p>• Herramientas: Nmap, Wireshark, Metasploit (introductorio)</p>
+                <p>• Seguridad en redes WiFi y sistemas operativos</p>
+                <p>• Laboratorios virtuales y simulación de ataques (CTF)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Etapa 5 */}
+        <div className="border-l-4 border-red-400 pl-6">
+          <h4 className="text-xl font-semibold text-red-400 mb-2">Etapa 5 – Servicios Empresariales</h4>
+          <p className="text-white font-medium mb-2">Charlas, capacitación a equipos y consultoría</p>
+          <p className="text-gray-400 mb-4">Modalidad: Virtual o presencial – adaptable a cada cliente</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div>
+              <h5 className="font-semibold text-white mb-3">Charlas Corporativas:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Ciberseguridad para usuarios no técnicos</p>
+                <p>• Prevención de fraudes digitales</p>
+                <p>• Seguridad en dispositivos móviles y entornos remotos</p>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-semibold text-white mb-3">Capacitación a Equipos:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Formación técnica básica para equipos IT</p>
+                <p>• Buenas prácticas en manejo de datos</p>
+                <p>• Simulación de ataques (phishing, ingeniería social)</p>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-semibold text-white mb-3">Consultoría en Seguridad Digital:</h5>
+              <div className="space-y-2 text-gray-300">
+                <p>• Diagnóstico de vulnerabilidades</p>
+                <p>• Revisión de políticas de seguridad</p>
+                <p>• Implementación de mejoras y cumplimiento legal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Paquetes Escolares */}
+        <div className="bg-gray-800 rounded-lg p-6">
+          <h4 className="text-2xl font-bold text-cyan-400 mb-4 flex items-center">
+            <GraduationCap className="w-6 h-6 mr-2" />
+            Paquetes Escolares (4 semanas – 1 sesión semanal de 1h 40min)
+          </h4>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            <div className="bg-gray-700 rounded-lg p-4">
+              <h5 className="font-semibold text-white mb-2">Paquete 1 – Ciberseguridad Escolar</h5>
+              <p className="text-gray-400 text-sm mb-3">Público: 1° a 3° de secundaria</p>
+              <div className="space-y-1 text-gray-300 text-sm">
+                <p>• Internet y redes sociales sin riesgo</p>
+                <p>• Contraseñas seguras y verificación en dos pasos</p>
+                <p>• Ciberbullying y privacidad digital</p>
+                <p>• Simulacro de ataque (phishing o engaños)</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4">
+              <h5 className="font-semibold text-white mb-2">Paquete 2 – Programación desde Cero</h5>
+              <p className="text-gray-400 text-sm mb-3">Público: 3° a 5° de secundaria</p>
+              <div className="space-y-1 text-gray-300 text-sm">
+                <p>• ¿Qué es programar? Lógica básica y pseudocódigo</p>
+                <p>• Variables y estructuras condicionales en Python</p>
+                <p>• Bucles y entrada/salida de datos</p>
+                <p>• Mini proyecto práctico: calculadora, generador o juego básico</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-700 rounded-lg p-4">
+              <h5 className="font-semibold text-white mb-2">Paquete 3 – Ciberseguridad Aplicada</h5>
+              <p className="text-gray-400 text-sm mb-3">Público: 4° y 5° de secundaria</p>
+              <div className="space-y-1 text-gray-300 text-sm">
+                <p>• Amenazas reales: phishing, malware, ingeniería social</p>
+                <p>• Huella digital y reputación online</p>
+                <p>• Herramientas de protección: VPN, antivirus, gestores de contraseñas</p>
+                <p>• Simulación de ataque ético (CTF básico)</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-4">
+            <h5 className="font-semibold text-white mb-2">Bono Extra – Sesión para Docentes</h5>
+            <p className="text-gray-100 text-sm mb-3">
+              Capacitación en seguridad digital para el personal educativo (1h 40min)
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 text-gray-100 text-sm">
+              <div>
+                <p>• Prevención de riesgos digitales en el aula</p>
+                <p>• Gestión segura de plataformas educativas</p>
+              </div>
+              <div>
+                <p>• Buenas prácticas en correos, redes y contraseñas</p>
+                <p>• Herramientas de ciberseguridad para docentes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-6 border-t border-gray-700 bg-gray-800 rounded-b-lg">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button
+            size="lg"
+            className="cyan-gradient hover:opacity-90 text-black font-semibold px-8 py-3"
+            onClick={() => {
+              setIsTemarioOpen(false)
+              window.open(
+                "https://wa.me/919467620?text=Hola, me interesa inscribirme al Programa Educativo completo",
+                "_blank",
+              )
+            }}
+          >
+            <MessageCircle className="w-5 h-5 mr-2" />
+            Inscribirme Ahora
+          </Button>
+          <Button
+            variant="outline"
+            size="lg"
+            className="px-8 py-3 border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent"
+            onClick={() => setIsTemarioOpen(false)}
+          >
+            Cerrar
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+<section className="py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 relative overflow-hidden">
+  <div className="absolute inset-0 bg-black/40"></div>
+  <div className="relative container mx-auto">
+    <div className="text-center space-y-8">
+      <div className="space-y-4">
+        <h2 className="text-4xl font-bold text-white">¿Te gustaría ser parte del equipo de Business Code?</h2>
+        <p className="text-xl text-cyan-100 max-w-4xl mx-auto leading-relaxed">
+          Estamos en constante crecimiento y buscamos personas apasionadas por la tecnología, la educación y la
+          innovación digital. Si tienes experiencia en programación, diseño web, ciberseguridad o enseñanza,
+          ¡queremos conocerte!
+        </p>
+      </div>
+
+      <div className="pt-8">
+        <Button
+          size="lg"
+          className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 text-lg"
+          onClick={() => window.open("https://tally.so/r/tuformulario", "_blank")}
+        >
+          Postula aquí
+        </Button>
+      </div>
     </div>
   </div>
 </section>
