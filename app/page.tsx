@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
-import { Monitor, Users, MapPin, MessageCircle, BookOpen, Code, Server, Mail, Clock, CheckCircle, ArrowRight, Phone, Instagram, Facebook, Linkedin, Menu, X, ChefHat, Plane, ShoppingBag, GraduationCap, Award, Target, Lightbulb } from 'lucide-react'
+import { Monitor, Users, MapPin, MessageCircle, BookOpen, Code, Server, Mail, Clock, CheckCircle, ArrowRight, Phone, Instagram , Menu, X, ChefHat, Plane, ShoppingBag, GraduationCap, Award, Target, Lightbulb } from 'lucide-react'
 import Image from "next/image"
 import { useState } from "react"
 
@@ -1086,26 +1086,17 @@ export default function Home() {
 
             <div>
               <h5 className="text-lg font-semibold mb-4 text-cyan-400">Síguenos</h5>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors"
-                >
-                  <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              </div>
+<div className="flex space-x-4">
+  <a
+    href="https://www.instagram.com/businesscode_25?igsh=Y2JuN3owYWs3Mnlh" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors"
+  >
+    <Instagram className="w-5 h-5 text-white" />
+  </a>
+</div>
+
               <Button
                 className="mt-4 cyan-gradient hover:opacity-90 text-black font-semibold w-full"
                 onClick={() =>
