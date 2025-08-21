@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://about-businesscode.netlify.app
+
+# Sitemaps
+Sitemap: https://about-businesscode.netlify.app/sitemap.xml
