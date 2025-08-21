@@ -205,7 +205,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-green-600 text-white">Básico</Badge>
                 <CardTitle className="text-2xl text-white">Plan Básico</CardTitle>
-                <div className="text-3xl font-bold text-cyan-400">Desde S/ 620</div>
+                <div className="text-3xl font-bold text-cyan-400">Desde S/550-800</div>
                 <CardDescription className="text-gray-400">Perfecto para empezar</CardDescription>
               </CardHeader>
               <CardContent>
@@ -237,7 +237,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-cyan-600 text-black">Intermedio</Badge>
                 <CardTitle className="text-2xl text-white">Plan Intermedio</CardTitle>
-                <div className="text-3xl font-bold text-cyan-400">S/ 600 - 850</div>
+                <div className="text-3xl font-bold text-cyan-400">S/ 1000 - 1500</div>
                 <CardDescription className="text-gray-400">Ideal para academias o empresas establecidas</CardDescription>
               </CardHeader>
               <CardContent>
@@ -266,7 +266,7 @@ export default function Home() {
               <CardHeader className="text-center">
                 <Badge className="w-fit mx-auto mb-4 bg-purple-600 text-white">Completo</Badge>
                 <CardTitle className="text-2xl text-white">Plan Completo</CardTitle>
-                <div className="text-3xl font-bold text-purple-400">S/ 970 - 2700</div>
+                <div className="text-3xl font-bold text-purple-400">S/ 2500 - 5000</div>
                 <CardDescription className="text-gray-400">Solución integral</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1021,11 +1021,13 @@ export default function Home() {
   <div className="relative container mx-auto">
     <div className="text-center space-y-8">
       <div className="space-y-4">
-        <h2 className="text-4xl font-bold text-white">¿Te gustaría ser parte del equipo de Business Code?</h2>
+        <h2 className="text-4xl font-bold text-white">¿Quieres crecer junto a Business Code?</h2>
         <p className="text-xl text-cyan-100 max-w-4xl mx-auto leading-relaxed">
-          Estamos en constante crecimiento y buscamos personas apasionadas por la tecnología, la educación y la
-          innovación digital. Si tienes experiencia en programación, diseño web, ciberseguridad o enseñanza,
-          ¡queremos conocerte!
+          Estamos iniciando un camino de innovacion en tecnologia , educacion y emprendimiento
+          digital.
+          Si te apasiona programar,diseñar,enseñar o crear nuevas ideas,este es e momento 
+          perfecto para unirte como colaborador/a y aportar tu talento.
+          Comparte con nosotros tu experiencia o interes,y construyamos juntos esta comunidad.
         </p>
       </div>
 
@@ -1033,9 +1035,9 @@ export default function Home() {
         <Button
           size="lg"
           className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 text-lg"
-          onClick={() => window.open("https://tally.so/r/tuformulario", "_blank")}
+          onClick={() => window.open("https://tally.so/r/3yQr00", "_blank")}
         >
-          Postula aquí
+          Quiero colaborar
         </Button>
       </div>
     </div>
