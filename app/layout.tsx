@@ -18,8 +18,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_PE",
   },
-    generator: 'v0.dev'
+    generator: 'v0.dev',
+    icons: {
+    icon: "/1.png", // asegúrate de tener esta imagen dentro de /public
+  },
 }
+
 
 export default function RootLayout({
   children,

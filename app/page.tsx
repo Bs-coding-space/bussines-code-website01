@@ -18,7 +18,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <Image src="/2.png" alt="Business Code Logo" width={200} height={60} className="h-12 w-auto" />
+              <Image src="images/2.png" alt="Business Code Logo" width={200} height={60} className="h-12 w-auto" />
             </div>
 
             {/* Desktop Navigation */}
