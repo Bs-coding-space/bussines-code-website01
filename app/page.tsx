@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
-import { Monitor, Users, MapPin, MessageCircle, BookOpen, Code, Server, Mail, Clock, CheckCircle, ArrowRight, Phone, Instagram , Menu, X, ChefHat, Plane, ShoppingBag, GraduationCap, Award, Target, Lightbulb } from 'lucide-react'
+import { Monitor, Users, MapPin, MessageCircle, BookOpen, Code, Server, Mail, Clock, CheckCircle, ArrowRight, Phone, Instagram, Facebook, Linkedin, Menu, X, ChefHat, Plane, ShoppingBag, GraduationCap, Award, Target, Lightbulb } from 'lucide-react'
 import Image from "next/image"
 import { useState } from "react"
 
@@ -18,7 +18,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <Image src="/logo.png" alt="Business Code Logo" width={200} height={60} className="h-12 w-auto" />
+              <Image src="/2.png" alt="Business Code Logo" width={200} height={60} className="h-12 w-auto" />
             </div>
 
             {/* Desktop Navigation */}

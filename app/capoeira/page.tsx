@@ -1,122 +1,150 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Users, Trophy, Heart, MessageCircle, ArrowLeft } from 'lucide-react'
-import Link from "next/link"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
-export default function CapoeiraPage() {
+export default function CapoeiraProPage() {
+  const [nombre, setNombre] = useState("");
+  const [email, setEmail] = useState("");
+  const [mensaje, setMensaje] = useState("");
+  const [enviado, setEnviado] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!nombre || !email) {
+      alert("Por favor completa tu nombre y correo.");
+      return;
+    }
+    setEnviado(true);
+    setNombre("");
+    setEmail("");
+    setMensaje("");
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-yellow-50">
+    <div className="min-h-screen flex flex-col bg-white">
       {/* Header */}
-      <header className="bg-white/90 backdrop-blur-md border-b border-green-200 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-yellow-500 rounded-lg flex items-center justify-center">
-                <Users className="w-6 h-6 text-white" />
-              </div>
-              <h1 className="text-2xl font-bold text-green-800">Ginga Brasil</h1>
-            </div>
-            <Link href="/">
-              <Button variant="outline" className="border-green-300 text-green-700 hover:bg-green-100 bg-transparent">
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                Volver
-              </Button>
-            </Link>
-          </div>
+      <header className="bg-green-700 text-white py-4 shadow-md sticky top-0 z-50">
+        <div className="container mx-auto px-6 flex justify-between items-center">
+          <h1 className="text-2xl font-bold">Ginga Brasil</h1>
+          <nav className="space-x-6">
+            <a href="#inicio" className="hover:underline">
+              Inicio
+            </a>
+            <a href="#nosotros" className="hover:underline">
+              Sobre Nosotros
+            </a>
+            <a href="#registro" className="hover:underline">
+              Registro
+            </a>
+            <a href="#historia" className="hover:underline">
+              Historia
+            </a>
+          </nav>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-green-600 to-yellow-500 text-white">
-        <div className="container mx-auto text-center">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">Academia de Capoeira Ginga Brasil</h2>
-            <p className="text-xl mb-8 leading-relaxed">
-              Aprende el arte marcial brasileño que combina lucha, danza, acrobacia y música
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-white text-green-600 hover:bg-green-50 px-8 py-3"
-                onClick={() =>
-                  window.open(
-                    "https://wa.me/51999999999?text=Hola, me interesa tomar clases de capoeira en Ginga Brasil",
-                    "_blank",
-                  )
-                }
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Clase de Prueba Gratis
-              </Button>
-            </div>
-          </div>
+      {/* Inicio */}
+      <section
+        id="inicio"
+        className="flex-1 flex items-center justify-center text-center py-20 
+                   bg-gradient-to-r from-green-500 via-yellow-400 to-green-600"
+      >
+        <div className="max-w-2xl">
+          <h2 className="text-5xl font-bold text-white mb-6 drop-shadow-lg">
+            Bienvenido a Ginga Brasil
+          </h2>
+          <p className="text-lg text-white/90">
+            Vive la energía de la capoeira: arte marcial, danza y cultura en un
+            solo movimiento.
+          </p>
         </div>
       </section>
 
-      {/* Beneficios */}
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-green-800 mb-4">Beneficios de la Capoeira</h3>
-          </div>
+      {/* Sobre Nosotros */}
+      <section
+        id="nosotros"
+        className="py-20 bg-gradient-to-br from-yellow-100 via-green-200 to-yellow-300"
+      >
+        <div className="container mx-auto px-6 text-center">
+          <h3 className="text-4xl font-bold text-green-800 mb-6 drop-shadow">
+            Sobre Nosotros
+          </h3>
+          <p className="max-w-3xl mx-auto text-gray-700 text-lg leading-relaxed">
+            Somos una academia dedicada a difundir la capoeira en su esencia
+            cultural y deportiva. Con entrenadores certificados y un ambiente
+            inclusivo, promovemos la disciplina, la música y el compañerismo.
+          </p>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center border-green-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-6 h-6 text-green-600" />
-                </div>
-                <h4 className="font-semibold text-green-800 mb-2">Condición Física</h4>
-                <p className="text-gray-600 text-sm">Mejora tu resistencia, fuerza y flexibilidad</p>
-              </CardContent>
-            </Card>
+      {/* Registro de clases */}
+      <section id="registro" className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6 max-w-lg">
+          <h3 className="text-3xl font-bold text-green-700 mb-6 text-center">
+            Regístrate para una clase
+          </h3>
+          {enviado ? (
+            <p className="text-green-700 text-center font-semibold">
+              ¡Gracias por registrarte! Te contactaremos pronto.
+            </p>
+          ) : (
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white shadow-lg rounded-lg p-6 space-y-4"
+            >
+              <input
+                type="text"
+                placeholder="Nombre completo"
+                value={nombre}
+                onChange={(e) => setNombre(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+              <input
+                type="email"
+                placeholder="Correo electrónico"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2"
+              />
+              <textarea
+                placeholder="Mensaje (opcional)"
+                value={mensaje}
+                onChange={(e) => setMensaje(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2"
+                rows={4}
+              />
+              <Button
+                type="submit"
+                className="w-full bg-green-700 text-white hover:bg-green-800"
+              >
+                Enviar
+              </Button>
+            </form>
+          )}
+        </div>
+      </section>
 
-            <Card className="text-center border-green-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-6 h-6 text-green-600" />
-                </div>
-                <h4 className="font-semibold text-green-800 mb-2">Socialización</h4>
-                <p className="text-gray-600 text-sm">Conoce personas y forma parte de una comunidad</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-green-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Trophy className="w-6 h-6 text-green-600" />
-                </div>
-                <h4 className="font-semibold text-green-800 mb-2">Autodefensa</h4>
-                <p className="text-gray-600 text-sm">Aprende técnicas de defensa personal</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-green-200 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-6 h-6 text-green-600" />
-                </div>
-                <h4 className="font-semibold text-green-800 mb-2">Expresión Artística</h4>
-                <p className="text-gray-600 text-sm">Desarrolla tu creatividad y expresión corporal</p>
-              </CardContent>
-            </Card>
-          </div>
+      {/* Historia */}
+      <section id="historia" className="py-20 bg-white">
+        <div className="container mx-auto px-6 text-center">
+          <h3 className="text-3xl font-bold text-green-700 mb-6">Historia</h3>
+          <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+            La capoeira nació en Brasil como una expresión de libertad y
+            resistencia cultural. Con el tiempo, se transformó en un arte
+            marcial reconocido mundialmente, transmitiendo valores de respeto,
+            música y movimiento.
+          </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-green-800 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Users className="w-8 h-8" />
-            <h4 className="text-2xl font-bold">Ginga Brasil</h4>
-          </div>
-          <p className="text-green-200 mb-6">Axé! Ven y descubre el arte de la capoeira</p>
-        </div>
+      <footer className="bg-green-800 text-white py-6 text-center">
+        <p className="text-green-200">
+          © {new Date().getFullYear()} Ginga Brasil — Este sitio es un modelo de
+          prototipo web.
+        </p>
       </footer>
     </div>
-  )
+  );
 }
