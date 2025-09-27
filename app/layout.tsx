@@ -20,9 +20,13 @@ export const metadata: Metadata = {
   },
     generator: 'v0.dev',
     icons: {
-    icon: "/images/1.png", // asegúrate de tener esta imagen dentro de /public
-  },
-}
+  icon: "/favicon.ico",
+  shortcut: "/favicon.ico",
+  apple: "/apple-touch-icon.png",
+},
+
+  }
+
 
 
 export default function RootLayout({
