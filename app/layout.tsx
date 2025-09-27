@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
     generator: 'v0.dev',
     icons: {
-    icon: "/1.png", // asegúrate de tener esta imagen dentro de /public
+    icon: "/images/1.png", // asegúrate de tener esta imagen dentro de /public
   },
 }
 
